@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fff;
+  color: #252525;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+@layer components {
+  .center {
+    @apply flex items-center;
+  }
+  .container {
+    @apply mx-auto max-w-[1600px] px-5;
+  }
+  .label {
+    @apply block text-xl font-medium mb-3;
+  }
+  .input {
+    @apply w-full py-3 px-5 border rounded placeholder:text-[#8B8B8B] border-[#8b8b8b9d] outline-none;
+  }
+}
